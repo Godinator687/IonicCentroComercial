@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { DepartamentosPageRoutingModule } from './departamentos-routing.module';
 
 import { DepartamentosPage } from './departamentos.page';
+import { ElectronciaComponent } from './electroncia/electroncia.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { DepartamentosPage } from './departamentos.page';
     IonicModule,
     DepartamentosPageRoutingModule
   ],
-  declarations: [DepartamentosPage]
+  declarations: [DepartamentosPage, ElectronciaComponent]
 })
 export class DepartamentosPageModule {}

@@ -12,11 +12,11 @@ const routes: Routes = [
   },
   {
     path:'linea-blanca',
-    component:LineaBlancaComponent
+    loadChildren:() => import('./linea-blanca/linea-blanca.component').then (m => m.LineaBlancaComponent)
   },
   {
     path:'electronica',
-    component:ElectronciaComponent
+    loadChildren:()=> import('./electroncia/electroncia.component').then(m => m.ElectronciaComponent)
   }
 ];
 
