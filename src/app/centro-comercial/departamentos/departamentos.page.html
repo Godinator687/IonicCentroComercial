@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Departamentos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <i-list>
+    <ion-item *ngFor="let d of listaDepartamento">
+      <ion-button (click)="onClick(d.id)" >{{d.nombre}}</ion-button><ion-icon slot="start" name="cart-outline"></ion-icon>
+      <ion-avatar>
+        <img [src]="d.imagen" />
+      </ion-avatar>
+    </ion-item>
+  </i-list>
+</ion-content>

@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Centros Comerciales</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let x of listacentro">
+      <ion-button (click)="onClick(x.id)" >{{x.nombre}}</ion-button><ion-icon slot="start" name="storefront-outline"></ion-icon>
+      <ion-avatar>
+        <img [src]="x.imagen"/>
+      </ion-avatar>
+    </ion-item>
+  </ion-list>
+</ion-content>
