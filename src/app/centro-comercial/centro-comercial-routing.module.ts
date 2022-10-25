@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'departamentos',
     loadChildren: () => import('./departamentos/departamentos.module').then( m => m.DepartamentosPageModule)
+  },
+  {
+    path: 'opciones-componente',
+    loadChildren: () => import('./opciones-componente/opciones-componente.module').then( m => m.OpcionesComponentePageModule)
   }
 ];
 
