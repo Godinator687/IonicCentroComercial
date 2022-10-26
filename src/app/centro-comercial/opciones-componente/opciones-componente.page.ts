@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OpcionesComponentePage implements OnInit {
 
+  fruta = ["naranjas", "peras", "uvas", "mango", "fresa"]
   constructor() { }
+
+  //metodo de enviar los datos por consola
+  selecciona($event){
+    console.log($event.detail.value);
+  }
 
   ngOnInit() {
   }

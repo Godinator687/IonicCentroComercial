@@ -1,17 +1,11 @@
-<ion-grid [fixed]="true">
+<ion-grid>
   <ion-row>
-    <ion-col>
-      <i-list>
-        <i-item>
-          <ion-item>
-            <ion-label>Pizza</ion-label>
-            <ion-select value="peperoni" multiple="true" placeholder="Select Pizza">
-              <ion-select-option value="peperoni">Peperoni</ion-select-option>
-              <ion-select-option value="hawaii">Hawaii</ion-select-option>
-            </ion-select>
-          </ion-item>
-        </i-item>
-      </i-list>
-    </ion-col>
+    <ion-col><ion-item>
+      <ion-label>Select</ion-label>
+      <ion-select>
+        <ion-select interface="action-sheet" placeholder="select fruta" (click)="selecciona($event)"></ion-select-option>
+        <ion-select-option ng*For = "let f of frura" value="{{f}}">{{f}}</ion-select-option>
+      </ion-select>
+    </ion-item></ion-col>
   </ion-row>
 </ion-grid>
